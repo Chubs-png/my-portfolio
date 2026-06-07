@@ -1,0 +1,1209 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script></script>
+    </head>
+    <body class="bg-gray-50 overflow-x-hidden">
+        <!-- Creative Navigation -->
+        <nav class="fixed inset-x-4 top-4 z-50 md:inset-auto md:top-8 md:right-8">
+            <div
+                class="flex items-center justify-between bg-gradient-to-r from-[#c5af32] to-[#a06f04] backdrop-blur-xl rounded-full px-4 py-2 md:px-6 md:py-4 border border-white/20 shadow-lg"
+            >
+                <!-- Desktop Links (visible on md+) -->
+                <ul class="hidden md:flex gap-6 list-none">
+                <li><a href="#home" class="nav-link text-white font-medium transition-all duration-300 px-4 py-2 rounded-full hover:bg-white/20">Home</a></li>
+                <li><a href="#about" class="nav-link text-white font-medium transition-all duration-300 px-4 py-2 rounded-full hover:bg-white/20">About</a></li>
+                <li><a href="#skills" class="nav-link text-white font-medium transition-all duration-300 px-4 py-2 rounded-full hover:bg-white/20">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link text-white font-medium transition-all duration-300 px-4 py-2 rounded-full hover:bg-white/20">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link text-white font-medium transition-all duration-300 px-4 py-2 rounded-full hover:bg-white/20">Experience</a></li>
+                </ul>
+
+                <!-- Mobile Toggle (visible below md) -->
+                <div class="flex items-center gap-3 w-full md:w-auto">
+                <div class="hidden md:block"></div>
+                <button id="navToggle" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden inline-flex items-center justify-center p-2 text-white focus:outline-none">
+                    <span class="sr-only">Open navigation menu</span>
+                    <!-- Hamburger Icon -->
+                    <svg id="hamburgerIcon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <!-- Close Icon (hidden by default) -->
+                    <svg id="closeIcon" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden absolute right-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-lg shadow-lg ring-1 ring-black/5 overflow-hidden">
+                <ul class="flex flex-col gap-1 p-2">
+                <li><a href="#home" class="nav-link block text-gray-800 font-medium px-4 py-2 rounded hover:bg-gray-100">Home</a></li>
+                <li><a href="#about" class="nav-link block text-gray-800 font-medium px-4 py-2 rounded hover:bg-gray-100">About</a></li>
+                <li><a href="#skills" class="nav-link block text-gray-800 font-medium px-4 py-2 rounded hover:bg-gray-100">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link block text-gray-800 font-medium px-4 py-2 rounded hover:bg-gray-100">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link block text-gray-800 font-medium px-4 py-2 rounded hover:bg-gray-100">Experience</a></li>
+                </ul>
+            </div>
+            </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-full creative-bg relative overflow-hidden">
+        <!-- Background Image Placeholder -->
+        <div class="absolute inset-0">
+            <!-- Gradient Overlay -->
+            <div
+            class="absolute inset-0 bg-gradient-to-r from-[#c5af32]/50 to-[#a06f04]/50"
+            ></div>
+        </div>
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div
+            class="floating-element absolute top-20 left-10 w-20 h-20 bg-white/20 rounded-full"
+            ></div>
+            <div
+            class="floating-element absolute top-40 right-20 w-16 h-16 bg-yellow-300/30 rounded-full"
+            style="animation-delay: 2s"
+            ></div>
+            <div
+            class="floating-element absolute bottom-32 left-1/4 w-12 h-12 bg-pink-300/30 rounded-full"
+            style="animation-delay: 4s"
+            ></div>
+            <div
+            class="floating-element absolute top-1/2 right-1/3 w-8 h-8 bg-blue-300/30 rounded-full"
+            style="animation-delay: 1s"
+            ></div>
+        </div>
+
+        <div
+            class="relative z-10 flex items-center justify-center min-h-screen px-6 py-20"
+        >
+            <div class="text-center text-white max-w-5xl">
+            <div class="mb-8">
+                <img
+                src="me.webp"
+                class="w-40 h-40 md:w-64 md:h-64 rounded-full mx-auto border-4 border-white shadow-lg"
+                />
+            </div>
+
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 neon-text">
+                Jhon Christian T. Osorio
+            </h1>
+
+            <p
+                class="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed"
+            >
+                Fresh Graduate at
+                <span class="font-semibold text-yellow-300"
+                >St. Anthony's College</span
+                ><br />
+                Specializing in Web Design, Graphics & Photography<br />
+                <span class="text-lg"
+                >Seeking opportunities to create amazing digital
+                experiences</span
+                >
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <button
+                onclick="scrollToSection('portfolio')"
+                class="bg-white text-[#c5af32] px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-xl"
+                >
+                View My Work
+                </button>
+                <button
+                onclick="scrollToSection('about')"
+                class="glass-effect text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                >
+                Learn More
+                </button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white slide-in">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">About Me</h2>
+            <div
+                class="w-32 h-2 bg-gradient-to-r from-[#c5af32] to-[#a06f04] mx-auto rounded-full"
+            ></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="creative-card p-8 hover-lift">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">My Journey</h3>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    I am a passionate Information Technology graduate from St. Anthony's College 
+                    with a unique blend of technical expertise and creative vision. My academic 
+                    journey bridged the gap between functional coding and impactful visual storytelling.
+                </p>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    I am committed to building technology that is not only robust and 
+                    accessible but also aesthetically engaging. Whether through web development, 
+                    graphic design, or photography, I strive to create digital experiences that 
+                    resonate with users.
+                </p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Education Card -->
+                <div class="creative-card p-8 hover-lift creative-border">
+                <div class="flex items-center mb-4">
+                    <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4"
+                    >
+                    <svg
+                        class="w-6 h-6 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+                        ></path>
+                    </svg>
+                    </div>
+                    <div>
+                    <h4 class="text-xl font-bold text-gray-800">Education</h4>
+                    <p class="text-gray-600">Academic Background</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div>
+                    <p class="font-semibold text-gray-800">
+                        Bachelor of Science in Information Technology
+                    </p>
+                    <p class="text-gray-600">St. Anthony's College</p>
+                    <p class="text-sm text-gray-500">2022 - 2026</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Specializations Card -->
+                <div class="creative-card p-8 hover-lift creative-border">
+                <div class="flex items-center mb-4">
+                    <div
+                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center mr-4"
+                    >
+                    <svg
+                        class="w-6 h-6 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                        ></path>
+                    </svg>
+                    </div>
+                    <div>
+                    <h4 class="text-xl font-bold text-gray-800">
+                        Specializations
+                    </h4>
+                    <p class="text-gray-600">Areas of Expertise</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <span
+                    class="px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-medium"
+                    >Web Design</span
+                    >
+                    <span
+                    class="px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 rounded-full text-sm font-medium"
+                    >Graphics Design</span
+                    >
+                    <span
+                    class="px-4 py-2 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 rounded-full text-sm font-medium"
+                    >Photography</span
+                    >
+                    <span
+                    class="px-4 py-2 bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-700 rounded-full text-sm font-medium"
+                    >UI/UX Design</span
+                    >
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section
+        id="skills"
+        class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 slide-in"
+        >
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">
+                Skills & Expertise
+            </h2>
+            <div
+                class="w-32 h-2 bg-gradient-to-r from-[#c5af32] to-[#a06f04] mx-auto rounded-full"
+            ></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+            <!-- Technical Skills -->
+            <div class="creative-card p-8 hover-lift">
+                <div class="text-center mb-8">
+                <div
+                    class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                    <svg
+                    class="w-10 h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    >
+                    <path
+                        d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                    ></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Technical Skills</h3>
+                </div>
+
+                <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">HTML/CSS</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#3b82f6"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="90"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        90%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">JavaScript</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#10b981"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="80"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        80%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                        <span class="text-gray-700 font-medium">PHP</span>
+                        <div class="skill-circle">
+                        <svg class="w-20 h-20" viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="25" stroke="#e5e7eb" stroke-width="4" fill="none"/>
+                            <circle cx="32" cy="32" r="25" stroke="#8b5cf6" stroke-width="4" fill="none" class="progress" data-progress="75"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700">75%</div>
+                        </div>
+                    </div>
+
+                <div class="flex items-center justify-between">
+                        <span class="text-gray-700 font-medium">Tailwind</span>
+                        <div class="skill-circle">
+                        <svg class="w-20 h-20" viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="25" stroke="#e5e7eb" stroke-width="4" fill="none"/>
+                            <circle cx="32" cy="32" r="25" stroke="#f59e0b" stroke-width="4" fill="none" class="progress" data-progress="70"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700 font-medium">Bootstrap</span>
+                        <div class="skill-circle">
+                        <svg class="w-20 h-20" viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="25" stroke="#e5e7eb" stroke-width="4" fill="none"/>
+                            <circle cx="32" cy="32" r="25" stroke="#0ea5e9" stroke-width="4" fill="none" class="progress" data-progress="65"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700">65%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="creative-card p-8 hover-lift">
+                <div class="text-center mb-8">
+                <div
+                    class="w-20 h-20 bg-gradient-to-r from-pink-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                    <svg
+                    class="w-10 h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    >
+                    <path
+                        d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                    ></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Design Skills</h3>
+                </div>
+
+                <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Adobe Photoshop</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#ec4899"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="85"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        85%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Figma</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#84cc16"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="90"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        90%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Canva Pro</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#f97316"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="95"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        95%
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Photography Skills -->
+            <div class="creative-card p-8 hover-lift">
+                <div class="text-center mb-8">
+                <div
+                    class="w-20 h-20 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                    <svg
+                    class="w-10 h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                    ></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Photography</h3>
+                </div>
+
+                <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium"
+                    >Portrait Photography</span
+                    >
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#14b8a6"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="85"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        85%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Event Photography</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#6366f1"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="80"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        80%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Photo Editing</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#dc2626"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="90"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        90%
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-700 font-medium">Lightroom</span>
+                    <div class="skill-circle">
+                    <svg class="w-20 h-20" viewBox="0 0 64 64">
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#e5e7eb"
+                        stroke-width="4"
+                        fill="none"
+                        />
+                        <circle
+                        cx="32"
+                        cy="32"
+                        r="25"
+                        stroke="#7c3aed"
+                        stroke-width="4"
+                        fill="none"
+                        class="progress"
+                        data-progress="88"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700"
+                    >
+                        88%
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-white slide-in">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">My Portfolio</h2>
+            <div
+                class="w-32 h-2 bg-gradient-to-r from-[#c5af32] to-[#a06f04] mx-auto rounded-full"
+            ></div>
+            <p class="text-xl text-gray-600 mt-6">
+                A showcase of my creative work across web design, graphics, and
+                photography
+            </p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="flex justify-center mb-12">
+            <div class="bg-gray-100 p-2 rounded-full">
+                <button
+                class="portfolio-filter active px-6 py-2 rounded-full font-medium transition-all"
+                data-filter="all"
+                >
+                All Work
+                </button>
+                <button
+                class="portfolio-filter px-6 py-2 rounded-full font-medium transition-all"
+                data-filter="web"
+                >
+                Web Design
+                </button>
+                <button
+                class="portfolio-filter px-6 py-2 rounded-full font-medium transition-all"
+                data-filter="graphics"
+                >
+                Graphics
+                </button>
+                <button
+                class="portfolio-filter px-6 py-2 rounded-full font-medium transition-all"
+                data-filter="photography"
+                >
+                Photography
+                </button>
+            </div>
+            </div>
+
+            <div class="portfolio-grid">
+            <!-- Web Design Projects -->
+            <img
+                src="outputt/web1.webp"
+                class="portfolio-item web creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/web2.webp"
+                class="portfolio-item web creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/web3.webp"
+                class="portfolio-item web creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <!-- Graphics Design Projects -->
+            <img
+                src="outputt/1.webp"
+                class="portfolio-item graphics creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/3.webp"
+                class="portfolio-item graphics creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/4.webp"
+                class="portfolio-item graphics creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/5.webp"
+                class="portfolio-item graphics creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <!-- Photography Projects -->
+            <img
+                src="outputt/photo1.webp"
+                class="portfolio-item photography creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/photo2.webp"
+                class="portfolio-item photography creative-card overflow-hidden hover-lift creative-border"
+            />
+
+            <img
+                src="outputt/photo3.webp"
+                class="portfolio-item photography creative-card overflow-hidden hover-lift creative-border"
+            />
+            </div>
+        </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section
+        id="experience"
+        class="py-20 bg-gradient-to-br from-purple-50 to-pink-50 slide-in"
+        >
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">Projects</h2>
+            <div
+                class="w-32 h-2 bg-gradient-to-r from-[#c5af32] to-[#a06f04] mx-auto rounded-full"
+            ></div>
+            </div>
+
+            <div class="grid lg:grid-cols-1 gap-12">
+            <!-- Academic Projects -->
+            <div>
+                <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="creative-card p-6 hover-lift creative-border cursor-pointer project-card"
+                     data-title="+Tech SmartBin"
+                     data-desc="A Website for an IoT-Based Recycling System for Plastic Bottles."
+                     data-role="Frontend & UI/UX Designer"
+                     data-tags="HTML,Firebase,Tailwind,JavaScript"
+                     data-images="outputt/web1.webp,outputt/web11.webp,outputt/web111.webp,outputt/web1admin.webp,outputt/web1admin2.webp,outputt/web1admin3.webp">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                    +Tech SmartBin
+                    </h4>
+                    <p class="text-gray-600 mb-4">
+                    A Website for an IoT-Based Recycling System for Plastic
+                    Bottles.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                        class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                        >HTML</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm"
+                        >Firebase</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                        >Tailwind</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm"
+                        >JavaScript</span
+                    >
+                    </div>
+                    <div class="text-sm text-gray-500">
+                    <p><strong>Role:</strong>Frontend & UI/UX Designer</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="creative-card p-6 hover-lift creative-border cursor-pointer project-card"
+                     data-title="JCI Antique Kruhay Website"
+                     data-desc="A Website for JCI Antique Kruhay to showcase their projects through web platform."
+                     data-role="Full-Stack Developer"
+                     data-tags="PHP,MySQL,Tailwind,JavaScript"
+                     data-images="outputt/web2.webp,outputt/web22.webp,outputt/web222.webp,outputt/web2222.webp,outputt/web22222.webp,outputt/web222222.webp,outputt/web2222222.webp">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                    JCI Antique Kruhay Website
+                    </h4>
+                    <p class="text-gray-600 mb-4">
+                    A Website for JCI Antique Kruhay to showcase their projects
+                    through web platform.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                        class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                        >PHP</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
+                        >MySQL</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                        >Tailwind</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm"
+                        >JavaScript</span
+                    >
+                    </div>
+                    <div class="text-sm text-gray-500">
+                    <p><strong>Role:</strong> Full-Stack Developer</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="creative-card p-6 hover-lift creative-border cursor-pointer project-card"
+                     data-title="Internship Time Tracker"
+                     data-desc="A Time Tracker for Interns to track their time and can also export the summary of their work to PDF File."
+                     data-role="Full-Stack Developer"
+                     data-tags="PHP,MySQL,Tailwind,JavaScript,Python"
+                     data-images="outputt/web3.webp,outputt/web33.webp,outputt/web333.webp,outputt/web3admin.webp,outputt/web3admin2.webp,outputt/web3admin3.webp">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                    Internship Time Tracker
+                    </h4>
+                    <p class="text-gray-600 mb-4">
+                    A Time Tracker for Interns to track their time and can also export the summary of their work to PDF File.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                        class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                        >PHP</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
+                        >MySQL</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                        >Tailwind</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm"
+                        >JavaScript</span
+                    >
+                    <span
+                        class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm"
+                        >Python</span
+                    >
+                    </div>
+                    <div class="text-sm text-gray-500">
+                    <p><strong>Role:</strong> Full-Stack Developer</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+            <div class="text-3xl font-bold mb-4 neon-text">
+                Jhon Christian T. Osorio
+            </div>
+            <p class="text-gray-400 text-lg mb-6">
+                Web & Graphics Designer • Photographer
+            </p>
+            <p class="text-gray-500">
+                © 2025 Jhon Christian T. Osorio
+            </p>
+            </div>
+        </div>
+        </footer>
+        <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+            behavior: "smooth",
+            });
+        }
+
+        // Navigation links
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            scrollToSection(targetId);
+            });
+        });
+
+        // Intersection Observer for slide-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+
+                // Animate skill circles when skills section is visible
+                if (entry.target.id === "skills") {
+                setTimeout(() => {
+                    animateSkillCircles();
+                }, 500);
+                }
+            }
+            });
+        }, observerOptions);
+
+        // Observe all slide-in sections
+        document.querySelectorAll(".slide-in").forEach((section) => {
+            observer.observe(section);
+        });
+
+        // Animate skill circles
+        function animateSkillCircles() {
+            const progressCircles = document.querySelectorAll(".progress");
+            progressCircles.forEach((circle) => {
+            const progress = circle.getAttribute("data-progress");
+            const circumference = 2 * Math.PI * 25; // radius = 25
+            const offset = circumference - (progress / 100) * circumference;
+            circle.style.strokeDashoffset = offset;
+            });
+        }
+
+        // Portfolio filter functionality
+        const filterButtons = document.querySelectorAll(".portfolio-filter");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => {
+                btn.classList.remove(
+                "active",
+                "bg-gradient-to-r",
+                "from-[#c5af32]",
+                "to-[#a06f04]",
+                "text-white"
+                );
+                btn.classList.add("text-gray-600");
+            });
+
+            // Add active class to clicked button
+            button.classList.add(
+                "active",
+                "bg-gradient-to-r",
+                "from-[#c5af32]",
+                "to-[#a06f04]",
+                "text-white"
+            );
+            button.classList.remove("text-gray-600");
+
+            const filter = button.getAttribute("data-filter");
+
+            // Filter portfolio items
+            portfolioItems.forEach((item) => {
+                if (filter === "all" || item.classList.contains(filter)) {
+                item.style.display = "block";
+                setTimeout(() => {
+                    item.style.opacity = "1";
+                    item.style.transform = "scale(1)";
+                }, 100);
+                } else {
+                item.style.opacity = "0";
+                item.style.transform = "scale(0.8)";
+                setTimeout(() => {
+                    item.style.display = "none";
+                }, 300);
+                }
+            });
+            });
+        });
+
+        // Initialize portfolio filter
+        document
+            .querySelector('.portfolio-filter[data-filter="all"]')
+            .classList.add(
+            "active",
+            "bg-gradient-to-r",
+            "from-[#c5af32]",
+            "to-[#a06f04]",
+            "text-white"
+            );
+        </script>
+        <script>
+        (function () {
+            function c() {
+            var b = a.contentDocument || a.contentWindow.document;
+            if (b) {
+                var d = b.createElement("script");
+                d.innerHTML =
+                "window.__CF$cv$params={r:'98ed2bb71619fecc',t:'MTc2MDUwODgwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                b.getElementsByTagName("head")[0].appendChild(d);
+            }
+            }
+            if (document.body) {
+            var a = document.createElement("iframe");
+            a.height = 1;
+            a.width = 1;
+            a.style.position = "absolute";
+            a.style.top = 0;
+            a.style.left = 0;
+            a.style.border = "none";
+            a.style.visibility = "hidden";
+            document.body.appendChild(a);
+            if ("loading" !== document.readyState) c();
+            else if (window.addEventListener)
+                document.addEventListener("DOMContentLoaded", c);
+            else {
+                var e = document.onreadystatechange || function () {};
+                document.onreadystatechange = function (b) {
+                e(b);
+                "loading" !== document.readyState &&
+                    ((document.onreadystatechange = e), c());
+                };
+            }
+            }
+        })();
+
+        // Mobile nav toggling and accessibility
+        (function () {
+            const navToggle = document.getElementById("navToggle");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const hamburgerIcon = document.getElementById("hamburgerIcon");
+            const closeIcon = document.getElementById("closeIcon");
+
+            function isMenuOpen() {
+            return navToggle.getAttribute("aria-expanded") === "true";
+            }
+
+            function openMenu() {
+            navToggle.setAttribute("aria-expanded", "true");
+            mobileMenu.classList.remove("hidden");
+            hamburgerIcon.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+            }
+
+            function closeMenu() {
+            navToggle.setAttribute("aria-expanded", "false");
+            mobileMenu.classList.add("hidden");
+            hamburgerIcon.classList.remove("hidden");
+            closeIcon.classList.add("hidden");
+            }
+
+            navToggle?.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (isMenuOpen()) closeMenu();
+            else openMenu();
+            });
+
+            // Close on click outside
+            document.addEventListener("click", (e) => {
+            if (!mobileMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                closeMenu();
+            }
+            });
+
+            // Close on Escape
+            document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeMenu();
+            });
+
+            // Close when a mobile link is clicked
+            document.querySelectorAll("#mobileMenu .nav-link").forEach((link) => {
+            link.addEventListener("click", () => closeMenu());
+            });
+        })();
+
+        // Project Modal Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('projectModalContent');
+            const closeBtn = document.getElementById('closeModalBtn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalRole = document.getElementById('modalRole');
+            const modalTags = document.getElementById('modalTags');
+            const modalImage = document.getElementById('modalImage');
+            const modalGallery = document.getElementById('modalGallery');
+
+            function openModal(data) {
+                modalTitle.textContent = data.title;
+                modalDescription.textContent = data.desc;
+                modalRole.textContent = data.role;
+                
+                // Set tags
+                modalTags.innerHTML = '';
+                const tags = data.tags.split(',');
+                const colors = ['blue', 'red', 'purple', 'yellow', 'green', 'orange'];
+                tags.forEach((tag, index) => {
+                    const color = colors[index % colors.length];
+                    const span = document.createElement('span');
+                    span.className = `px-3 py-1 bg-${color}-100 text-${color}-700 rounded-full text-sm`;
+                    span.textContent = tag.trim();
+                    modalTags.appendChild(span);
+                });
+
+                // Set images
+                const images = data.images.split(',');
+                modalImage.src = images[0];
+                
+                modalGallery.innerHTML = '';
+                if (images.length > 1) {
+                    images.forEach(imgSrc => {
+                        const img = document.createElement('img');
+                        img.src = imgSrc;
+                        img.className = 'w-20 h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-blue-500 transition-colors';
+                        img.onclick = () => { modalImage.src = imgSrc; };
+                        modalGallery.appendChild(img);
+                    });
+                }
+
+                // Show modal
+                modal.classList.remove('hidden');
+                // Trigger reflow
+                void modal.offsetWidth;
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.classList.add('opacity-0');
+                modalContent.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+
+            projectCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    openModal({
+                        title: card.dataset.title,
+                        desc: card.dataset.desc,
+                        role: card.dataset.role,
+                        tags: card.dataset.tags,
+                        images: card.dataset.images
+                    });
+                });
+            });
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        });
+        </script>
+
+        <!-- Project Modal -->
+        <div id="projectModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-75 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+            <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col transform scale-95 transition-transform duration-300" id="projectModalContent">
+                <div class="flex justify-between items-center p-6 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800" id="modalTitle">Project Title</h3>
+                    <button id="closeModalBtn" class="text-gray-500 hover:text-red-500 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-6 overflow-y-auto flex-grow flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <img id="modalImage" src="" alt="Project Snapshot" class="w-full h-auto rounded-xl shadow-md border object-cover">
+                        <div id="modalGallery" class="flex gap-2 mt-4 overflow-x-auto pb-2">
+                            <!-- Thumbnails -->
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 space-y-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 border-b pb-2 mb-2">Description</h4>
+                            <p id="modalDescription" class="text-gray-600 leading-relaxed"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 border-b pb-2 mb-2">Technologies Used</h4>
+                            <div id="modalTags" class="flex flex-wrap gap-2"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 border-b pb-2 mb-2">Role</h4>
+                            <p id="modalRole" class="text-gray-600"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
