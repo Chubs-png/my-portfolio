@@ -30,7 +30,6 @@ const Hero = () => {
           </div>
           
           <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
-            <span className="text-xs font-mono px-2 py-1 rounded-md bg-white/5 text-foreground/80 border border-white/10">IT Graduate</span>
             <span className="text-xs font-mono px-2 py-1 rounded-md bg-white/5 text-foreground/80 border border-white/10">Web Design</span>
             <span className="text-xs font-mono px-2 py-1 rounded-md bg-white/5 text-foreground/80 border border-white/10">Photography</span>
           </div>
