@@ -5,15 +5,16 @@ const About = () => {
         <h2 className="text-xl font-bold text-foreground">About</h2>
         <div className="space-y-4 text-sm md:text-base text-foreground/70 leading-relaxed">
           <p>
-            I am a passionate Information Technology graduate from St. Anthony's College 
-            with a unique blend of technical expertise and creative vision. My academic 
-            journey bridged the gap between functional coding and impactful visual storytelling.
+            I am a passionate Information Technology professional from St. Anthony's College, 
+            currently working as an IT Programmer 1 in OPPDAO, with a unique blend of technical 
+            expertise and creative vision. My background bridges the gap between functional coding 
+            and impactful visual storytelling.
           </p>
           <p>
-            I am committed to building technology that is not only robust and 
-            accessible but also aesthetically engaging. Whether through web development, 
-            graphic design, or photography, I strive to create digital experiences that 
-            resonate with users.
+            I am committed to building technology that is not only robust and accessible but also 
+            aesthetically engaging. Whether through software development, web applications, 
+            graphic design, or photography, I strive to create digital solutions and experiences 
+            that resonate with users.
           </p>
         </div>
       </div>
