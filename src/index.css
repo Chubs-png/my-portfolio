@@ -25,10 +25,6 @@
   .bento-card {
     @apply bg-white/5 border border-white/10 rounded-2xl transition-all duration-300;
   }
-  
-  .bento-card:hover {
-    @apply bg-white/10 border-white/20 transform -translate-y-1 shadow-lg shadow-black/50;
-  }
 
   .glass-pill {
     @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-full;
